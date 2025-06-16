@@ -65,7 +65,7 @@ function askUserName() {
 function askUserNumberSeats() {
     numSeat = prompt ("How many seats would you like your rental car to have? \nPlease enter a number between and including 1-8.");
     while (numSeatInvalid) {
-        if (numSeat == "" || numSeat == " " || (isNaN(numSeat))) {
+        if (numSeat == "" || numSeat == " " || (isNaN(numSeat)) || numSeat >= 1 || numSeat <= 8) {
             numSeat = prompt ("ERROR! \nInvalid number of seats entered. \nPlease enter a valid number of seats between and including 1-8.");
         }
         else {
