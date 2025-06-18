@@ -15,7 +15,6 @@ let numSeatArray = ["null", "1", "2", "3", "4", "5", "6", "7", "8"];
  Main code
  ****************************/
 alert(askUserName())
-alert("Welcome " + userName + " to Bob's car rentals. \nTo place an order click the green button that says 'Begin order'.")
 //function for button to begin the javascript to place an order
 function begin() {
     askUserNumberSeats()
@@ -57,7 +56,7 @@ function askUserName() {
         }
         else {
             userNameInvalid = false;
-            alert("Hi " +userName+ ", \nWelcome to Bob's car rentals.");
+            welcome.innerHTML = "Welcome, to Bob's car rentals. " + userName + " To place an order click the green button.";
         }
     }
 }
