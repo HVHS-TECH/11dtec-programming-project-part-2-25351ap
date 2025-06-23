@@ -16,30 +16,30 @@ let numSeatArray = ["null", "1", "2", "3", "4", "5", "6", "7", "8"];
  ****************************/
 alert(askUserName())
 //function for button to begin the javascript to place an order
-function begin() {
-    askUserNumberSeats()
-    if (numSeat == numSeatArray[1]) {
+function validateForm() {
+    let seat = document.forms[place_user_order][user_input_seat].value;
+    if (seat == numSeatArray[1]) {
         alert("The car with one seat that we recomend for you is the " + carsArray[1]);
     }
-    else if (numSeat == numSeatArray[2]) {
+    else if (seat == numSeatArray[2]) {
         alert("The car with two seats that we recomend for you is the " + carsArray[2]);
     }
-    else if (numSeat == numSeatArray[3]) {
+    else if (seat == numSeatArray[3]) {
         alert("The car with three seats that we recomend for you is the " + carsArray[3]);
     }
-    else if (numSeat == numSeatArray[4]) {
+    else if (seat == numSeatArray[4]) {
         alert("The car with four seats that we recomend for you is the " + carsArray[4]);
     }
-    else if (numSeat == numSeatArray[5]) {
+    else if (seat == numSeatArray[5]) {
         alert("The car with five seats that we recomend for you is the " + carsArray[5]);
     }
-    else if (numSeat == numSeatArray[6]) {
+    else if (seat == numSeatArray[6]) {
         alert("The car with six seats that we recomend for you is the " + carsArray[6]);
     }
-    else if (numSeat == numSeatArray[7]) {
+    else if (seat == numSeatArray[7]) {
         alert("The car with seven seats that we recomend for you is the " + carsArray[7]);
     }
-    else if (numSeat == numSeatArray[8]) {
+    else if (seat == numSeatArray[8]) {
         alert("The car with eight seats that we recomend for you is the " + carsArray[8]);
     }
 }
@@ -56,7 +56,7 @@ function askUserName() {
         }
         else {
             userNameInvalid = false;
-            welcome.innerHTML = "Welcome, to Bob's car rentals. " + userName + " To place an order click the green button.";
+            welcome.innerHTML = "Welcome, to Bob's car rentals " + userName + " . To place an order click the green button.";
         }
     }
 }
