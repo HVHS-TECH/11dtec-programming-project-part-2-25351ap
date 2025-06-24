@@ -14,9 +14,8 @@ let numSeatArray = ["null", "1", "2", "3", "4", "5", "6", "7", "8"];
 /****************************
  Main code
  ****************************/
-alert(askUserName())
 //function for button to begin the javascript to place an order
-function validateForm() {
+function processInput() {
     let seat = document.forms[place_user_order][user_input_seat].value;
     if (seat == numSeatArray[1]) {
         alert("The car with one seat that we recomend for you is the " + carsArray[1]);
