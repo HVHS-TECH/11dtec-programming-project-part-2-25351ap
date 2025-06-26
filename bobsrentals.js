@@ -19,6 +19,7 @@ function processInput() {
     let seat = document.forms[place_user_order][user_input_seat].value;
     if (seat == numSeatArray[1]) {
         alert("The car with one seat that we recomend for you is the " + carsArray[1]);
+        return true;
     }
     else if (seat == numSeatArray[2]) {
         alert("The car with two seats that we recomend for you is the " + carsArray[2]);
