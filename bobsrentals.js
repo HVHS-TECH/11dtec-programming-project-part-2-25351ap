@@ -18,8 +18,9 @@ let numSeatArray = ["null", "1", "2", "3", "4", "5", "6", "7", "8"];
 function processInput() {
     console.log("testing");
     let seat = user_input_seat.value;
+    let day = input_num_day.value;
     if (seat == numSeatArray[1]) {
-        test.innerHTML = "The car with one seat that we recomend for you is the " + carsArray[1];
+        test.innerHTML = "Based on your requirements we recomend the " + carsArray[1] + " . The " + carsArray[1] + " is $25 a day";
     }
     else if (seat == numSeatArray[2]) {
         test.innerHTML = "The car with two seats that we recomend for you is the " + carsArray[2];
