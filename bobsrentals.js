@@ -17,7 +17,7 @@ let numSeatArray = ["null", "1", "2", "3", "4", "5", "6", "7", "8"];
 //function for button to begin the javascript to place an order
 function processInput() {
     console.log("testing");
-    let seat = document.forms[place_user_order][user_input_seat].value;
+    let seat = user_input_seat.value
     if (seat == numSeatArray[1]) {
         test.innerHTML = "The car with one seat that we recomend for you is the " + carsArray[1];
     }
