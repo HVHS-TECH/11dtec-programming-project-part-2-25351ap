@@ -15,7 +15,7 @@
 </form>
 <br><br>
 <p>To rent a car for one day is between $25 and $105 depending on the car. Here at Bob's rentals we also offer insurence for an extra $15. Begin placing your order below. Once you have filled out all required information click the continue button to continue your order.</p>
-<form id="place_user_order" onsubmit="return processInput()">
+<form id="place_user_order" onsubmit="return processInput()" method="post">
     <label for="user_input_seat"> How many seats would you like your car to have?</label><br>
     <input type="number" id="user_input_seat" name="user_input_seat" min="1" max="8" required><br>
     <label for="input_num_days"> How long would you like to rent a car for?</label><br>
