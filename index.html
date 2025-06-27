@@ -1,36 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<title>Bob's Car Rentals</title>
-<script src="bobsrentals.js"></script>
+    <title>Bob's Car Rentals</title>
+    <script src="bobsrentals.js"></script>
 </head>
+
 <body>
 
-<h1>Bob's Car Rentals</h1>
-<p id="welcome">Welcome to Bob's car rentals.</p>
-<form id="input_user_name">
-    <label for="user_input_name"> Please enter your name below.</label><br>
-    <input type="text" id="user_input_name" name="user_input_name" required>
-    <input type="submit">
-</form>
-<br>
-<p>Bob first established Bob's car rentals in 1977 as the only and with just one car avalible to rent. Today we are a company of many employes and have 8 cars avalible to rent: the BAC Mono, the MX5, the Mini, the Falcon, the Outlander, and the Estima. Our cars have varius numbers of seats to fit all our customers needs.</p>
-<p>To rent a car for one day is between $25 and $105 depending on the car. Here at Bob's rentals we also offer insurence for an extra $15. Begin placing your order below. Once you have filled out all required information click the continue button and we will process your requirements and recomend you a car based on your needs.</p>
-<form id="place_user_order">
-    <label for="user_input_seat"> How many seats would you like your car to have?</label><br>
-    <input type="number" id="user_input_seat" name="user_input_seat" min="1" max="8" required><br>
-    <label for="input_num_days"> How long would you like to rent a car for?</label><br>
-    <input type="number" id="input_num_days" name="input_num_days" min="1" max="30" required><br>
-    <label for="insurance">Would you like to upgrade to insurance for an extra $15 a day?</label><br>
-    <input type="radio" id="yes" name="insurance" value="yes" required>
-    <label for="yes">Yes</label>
-    <input type="radio" id="no" name="insurance" value="no" required>
-    <label for="no">No</label><br>
-    <input type="button" value="continue" onclick="processInput()">
-</form>
-<br><br>
-<p id="test">hello</p>
-<button onclick="begin()">Begin order</button>
+    <h1>Bob's Car Rentals</h1>
+    <p id="welcome">Welcome to Bob's car rentals.</p>
+    <form id="input_user_name">
+        <label for="user_input_name"> Please enter your name below.</label><br>
+        <input type="text" id="user_input_name" name="user_input_name" required>
+        <input type="submit">
+    </form>
+    <br>
+    <p>Bob first established Bob's car rentals in 1977 as the only and with just one car avalible to rent. Today we are
+        a company of many employes and have 9 different cars avalible to rent: the BAC Mono, the MX5, the Mini, the i30,
+        the Falcon, the Kona, the Prado, the Outlander, and the Estima. Our cars have varius numbers of seats to fit all
+        our customers needs.</p>
+    <p>To rent a car for one day is between $25 and $105 depending on the car. Here at Bob's rentals we also offer
+        insurence for an extra $15. Begin placing your order below. Once you have filled out all required information
+        click the continue button and we will process your requirements and recomend you a car based on your needs.</p>
+    <form id="place_user_order">
+        <label for="user_input_seat"> How many seats would you like your car to have?</label><br>
+        <input type="number" id="user_input_seat" name="user_input_seat" min="1" max="8" required><br>
+        <label for="input_num_days"> How long would you like to rent a car for?</label><br>
+        <input type="number" id="input_num_days" name="input_num_days" min="1" max="30" required><br>
+        <label for="insurance">Would you like to upgrade to insurance for an extra $15 a day?</label><br>
+        <input type="radio" id="yes" name="insurance" value="yes" required>
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="insurance" value="no" required>
+        <label for="no">No</label><br>
+        <input type="button" value="continue" onclick="processInput()">
+    </form>
+    <p id="recomend">.</p>
+    <form id="user_chosen_car">
+        <label for="user_input_car">Which car would you like to rent?</label><br>
+        <input type="radio" id="BAC_Mono" name="user_input_car" value="BAC_Mono" required>
+        <label for="BAC_Mono">BAC Mono - 1 seat - $25/day without insurance</label><br>
+        <input type="radio" id="MX5" name="user_input_car" value="MX5" required>
+        <label for="MX5">MX5 - 2 seats - $30/day without insurance</label><br>
+        <input type="radio" id="Mini" name="user_input_car" value="Mini" required>
+        <label for="Mini">Mini - 4 seats - $40/day without insurance</label><br>
+        <input type="radio" id="i30" name="user_input_car" value="i30" required>
+        <label for="i30">i30 - 4 seats - $40/day without insurance</label><br>
+        <input type="radio" id="Falcon" name="user_input_car" value="Falcon" required>
+        <label for="Falcon">Falcon - 5 seats - $50/day without insurance</label><br>
+        <input type="radio" id="Kona" name="user_input_car" value="Kona" required>
+        <label for="Kona">Kona - 5 seats - $50/day without insurance</label><br>
+        <input type="radio" id="Prado" name="user_input_car" value="Prado" required>
+        <label for="Prado">Prado - 5 seats - $50/day without insurance</label><br>
+        <input type="radio" id="Outlander" name="user_input_car" value="Outlander" required>
+        <label for="Outlander">Outlander - 7 seats - $60/day without insurance</label><br>
+        <input type="radio" id="Estima" name="user_input_car" value="Estima" required>
+        <label for="Estima">Estima - 8 seats - $70/day without insurance</label><br>
+        <input type="button" value="confirm" onclick="confirmInput()">
+    </form>
 </body>
-</html>
 
+</html>
