@@ -13,7 +13,7 @@ let carPriceArray = ["null", "25", "30", "40", "50", "60", "70"]
 /****************************
  Main code
  ****************************/
-//function for button to begin the javascript to place an order
+//function processing input for form place_user_order
 function processInput() {
     console.log("testing");
     let seat = user_input_seat.value;
@@ -35,6 +35,10 @@ function processInput() {
     else if (seat == numSeatArray[8]) {
         test.innerHTML = "Based on your requirements we recomend the " + carsArray[9] + " . The " + carsArray[9] + " is " + carPriceArray[6] + " dollars a day with out insurance. The " + carsArray[9] + " has 8 seats.";
     }
+}
+//function processing input for form user_input_car
+function confirmInput() {
+    
 }
  /****************************
  Functions
