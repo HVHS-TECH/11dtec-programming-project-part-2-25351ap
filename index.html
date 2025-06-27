@@ -6,14 +6,18 @@
     <script src="bobsrentals.js"></script>
 </head>
 
+
+<!--*************************************************************
+  BODY
+**************************************************************-->
 <body>
 
     <h1>Bob's Car Rentals</h1>
     <p id="welcome">Welcome to Bob's car rentals.</p>
     <form id="input_user_name">
         <label for="user_input_name"> Please enter your name below.</label><br>
-        <input type="text" id="user_input_name" name="user_input_name" required>
-        <input type="submit">
+        <input type="text" id="user_input_name" name="user_input_name">
+        <input type="button" value="confirm" onclick="userInputName()">
     </form>
     <br>
     <p>Bob first established Bob's car rentals in 1977 as the only and with just one car avalible to rent. Today we are
@@ -58,7 +62,10 @@
         <label for="Estima">Estima - 8 seats - $70/day without insurance</label><br>
         <input type="button" value="confirm" onclick="confirmInput()">
     </form>
-    <p id=""></p>
+    <p id="final">.</p>
 </body>
 
 </html>
+<!--*************************************************************
+  END OF INDEX.HTML
+**************************************************************-->
